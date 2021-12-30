@@ -1,0 +1,2 @@
+# Drowsiness-detection-by-deep-learning-in-Android-phone
+This repository includes a drowsiness detection system realized by ResNet-50 neural network architecture and embedded into Android environment. Haar cascades are used for eyes extraction and deep learning for final classification. The Python module is integrated into the application by Chaquopy. Datasets used for training: MRL Eye Dataset , Kaggle Drowsiness Dataset, Closed Eyes In The Wild (CEW).
