@@ -65,10 +65,10 @@ def main(data, score):
         lpred = np.round(interpreter.get_tensor(output_details[0]['index']))
 
 
-    if (rpred[0] == 0 and lpred[0] == 0):
+    if (rpred[0] == 0 or lpred[0] == 0):
        score = score + 1
-    if (rpred[0] == 1 and lpred[0] == 1):
-       score = score
+    if (rpred[0] == 1 or lpred[0] == 1):
+       score = score - 1
 
     if (score < 0):
        score = 0
